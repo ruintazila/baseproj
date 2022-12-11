@@ -1,0 +1,134 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.ruintazila",
+    "module": "dm-plugin",
+    "version": "0.1.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.6"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "dm-plugin-0.1.5.jar",
+          "url": "dm-plugin-0.1.5.jar",
+          "size": 29748,
+          "sha512": "848fb530905852ec2a1bc4d7604d4a5056bcbf3e095372b55f55b78828eec1bcc45ebcd49bc48771206825f102b2a5db0869d82c3183502c52fe924dbe2513ad",
+          "sha256": "f3e3be60a0e4c2520b6b74cd0dfd025cb442a91b22059c3c535c2f3fd1492ea4",
+          "sha1": "ae0a9a1f5ab1573d7cb3e93fe012ea1ae1d1afd0",
+          "md5": "778427a3f477a88bbbb6e15227276a4f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.3.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-gradle-plugin",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.7.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dm-plugin-0.1.5.jar",
+          "url": "dm-plugin-0.1.5.jar",
+          "size": 29748,
+          "sha512": "848fb530905852ec2a1bc4d7604d4a5056bcbf3e095372b55f55b78828eec1bcc45ebcd49bc48771206825f102b2a5db0869d82c3183502c52fe924dbe2513ad",
+          "sha256": "f3e3be60a0e4c2520b6b74cd0dfd025cb442a91b22059c3c535c2f3fd1492ea4",
+          "sha1": "ae0a9a1f5ab1573d7cb3e93fe012ea1ae1d1afd0",
+          "md5": "778427a3f477a88bbbb6e15227276a4f"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dm-plugin-0.1.5-javadoc.jar",
+          "url": "dm-plugin-0.1.5-javadoc.jar",
+          "size": 261,
+          "sha512": "742936317ad8f58c744619090743a3a3f5866cd31b6a7e7bf27b55dcbafdb527fec29b593e63f929d427863028b407b4c4379b0d4d44dc00d8a8a14d6d9bde9d",
+          "sha256": "1a85446da6da785970662e4bb0d9db961599c28727d382fd699b7335240805c9",
+          "sha1": "a88698f11753e747092a6c8adccc888f28e60e38",
+          "md5": "fccf40ec674fee6e7ab51bf1aa591538"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dm-plugin-0.1.5-sources.jar",
+          "url": "dm-plugin-0.1.5-sources.jar",
+          "size": 2365,
+          "sha512": "07d0467ae74268b7ab15a09758c34d8e791738ae44618839b32f5c4757b72f4cfef3d289db7d678e4da9ac034a4c908cf66e8a53b93a447edeca6fa4f66d395e",
+          "sha256": "7d7451374fa12ca143c86171c49a6e66e598f32c759ab88520b799dd20aad507",
+          "sha1": "b76fbef4b3226152a9b8a8092569eb37119f4fdb",
+          "md5": "77111f706b33227c3fa9637c4924b5fd"
+        }
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@ pluginManagement {
         maven { setUrl("https://jitpack.io") }
         maven { setUrl("./local-repo/") }
     }
-    resolutionStrategy {
+/*    resolutionStrategy {
         eachPlugin {
             when (requested.id.id) {
                 "io.github.ruintazila.dm-plugin" -> {
@@ -18,7 +18,7 @@ pluginManagement {
                 }
             }
         }
-    }
+    }*/
 }
 
 val snapshotVersion : String? = System.getenv("COMPOSE_SNAPSHOT_ID")
@@ -41,4 +41,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "core-lib"
 include(":app")
-includeBuild("plugins")
+//includeBuild("plugins")

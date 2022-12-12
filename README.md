@@ -15,7 +15,7 @@
 
 #### 使用说明
 
-1.  xxxx
+1.  执行 ./gradlew versionCatalogUpdate --interactive 检测libs.versions.toml更新 ./gradlew versionCatalogApplyUpdates 应用更新
 2.  xxxx
 3.  xxxx
 

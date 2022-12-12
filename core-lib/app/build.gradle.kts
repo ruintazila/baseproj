@@ -2,11 +2,9 @@
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-//    id("com.android.application")
-//    id("org.jetbrains.kotlin.android")
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.kapt)
+//    alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.dm.plugin)
 }
 
@@ -26,7 +24,7 @@ android {
         }
     }
 }
-
+//apply("${project.rootDir}/buildscripts/common.gradle.kts")
 dependencies {
 
 }

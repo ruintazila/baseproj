@@ -10,22 +10,25 @@ pluginManagement {
         maven { setUrl("https://jitpack.io") }
         maven { setUrl("./local-repo/") }
     }
-}
-/*    resolutionStrategy {
+    resolutionStrategy {
         eachPlugin {
             when (requested.id.id) {
-                "dagger.hilt.android.plugin" -> {
-                    useModule("com.google.dagger:hilt-android-gradle-plugin:${requested.version}")
-                }
                 "io.github.ruintazila.dm-plugin" -> {
-                    useModule("com.github.ruintazila.dm-plugin:dm-plugin:${requested.version}")
+                    useModule("io.github.ruintazila.dm-plugin:dm-plugin:${requested.version}")
                 }
             }
         }
-    }*/
+    }
+}
+
+val snapshotVersion : String? = System.getenv("COMPOSE_SNAPSHOT_ID")
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        snapshotVersion?.let {
+            println("https://androidx.dev/snapshots/builds/$it/artifacts/repository/")
+            maven { url = uri("https://androidx.dev/snapshots/builds/$it/artifacts/repository/") }
+        }
         mavenCentral()
         google()
         maven { setUrl("https://jitpack.io") }

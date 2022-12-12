@@ -139,14 +139,14 @@ class DMPlugin : Plugin<Project> {
             kotlinOptions {
                 jvmTarget = project.property("javaVersion").toString()
                 freeCompilerArgs = freeCompilerArgs + listOf(
-                    "-Xopt-in=kotlin.ExperimentalStdlibApi",
-                    "-Xopt-in=kotlin.RequiresOptIn",
-                    "-Xopt-in=kotlin.contracts.ExperimentalContracts",
-                    "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+                    "-opt-in=kotlin.ExperimentalStdlibApi",
+                    "-opt-in=kotlin.RequiresOptIn",
+                    "-opt-in=kotlin.contracts.ExperimentalContracts",
+                    "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
                 )
                 if (useCompose) {
                     freeCompilerArgs =
-                        freeCompilerArgs + "-Xopt-in=androidx.compose.foundation.ExperimentalFoundationApi"
+                        freeCompilerArgs + "-opt-in=androidx.compose.foundation.ExperimentalFoundationApi"
                 }
             }
         }

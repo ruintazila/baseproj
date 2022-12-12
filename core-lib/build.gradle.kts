@@ -15,3 +15,11 @@ ext {
     set("javaVersion", libs.versions.java.asProvider().get())
     set("composeCompiler", libs.versions.compose.compiler.get())
 }
+
+@Suppress("DSL_SCOPE_VIOLATION")
+plugins {
+    alias(libs.plugins.dependencies.update)
+    alias(libs.plugins.version.catalog.update)
+}
+
+apply("${project.rootDir}/buildscripts/toml-updater-config.gradle")

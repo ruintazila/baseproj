@@ -26,5 +26,7 @@ android {
 }
 //apply("${project.rootDir}/buildscripts/common.gradle.kts")
 dependencies {
-
+    implementation(libs.google.android.material)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
 }

@@ -1,3 +1,4 @@
+
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 //@file:Suppress("UnstableApiUsage")
@@ -6,7 +7,7 @@
 //    id("com.android.library") version "7.3.1" apply false
 //    id("org.jetbrains.kotlin.android") version "1.7.21" apply false
 //}
-
+@Suppress("DSL_SCOPE_VIOLATION")
 ext {
     set("minSdk", libs.versions.minSdk.get())
     set("targetSdk", libs.versions.targetSdk.get())
